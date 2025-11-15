@@ -107,6 +107,3 @@ GRANT ALL PRIVILEGES ON eventhub.* TO 'eventhub_user'@'localhost';
 FLUSH PRIVILEGES;
 
 ALTER TABLE event ADD COLUMN status ENUM('upcoming','ongoing','completed') DEFAULT 'upcoming';
-
-DELIMITER ;
-select*from user_account;	
