@@ -309,24 +309,39 @@ Follow these steps to contribute:
 
 <hr/>
 
-<h2>📸 Screenshots (Recommended)</h2>
+<h2>📸 Screenshots</h2>
 
-<p>Add inside <code>public/assets/</code> then reference:</p>
+<p>Below are some visual previews of EventHub.  
+All screenshots are stored in the repository under:</p>
 
-<pre>
-<img src="public/assets/screenshot1.png" width="700">
-</pre>
+<p>
+  <a href="https://github.com/Daksh-Tomar/EventHub/tree/c5a215c9daff140b176b98e010d8af3fa561f555/DBMS%20Project/screenshots">
+    📁 DBMS Project → screenshots
+  </a>
+</p>
 
-Suggested screenshots:
-<ul>
-  <li>Login Page</li>
-  <li>User Dashboard</li>
-  <li>Faculty Dashboard</li>
-  <li>Event Details Modal</li>
-  <li>My Events Page</li>
-</ul>
+<br/>
+
+<h3>🏠 Landing Page</h3>
+<img src="https://raw.githubusercontent.com/Daksh-Tomar/EventHub/c5a215c9daff140b176b98e010d8af3fa561f555/DBMS%20Project/screenshots/landing%20page.png" width="800"/>
+
+<br/><br/>
+
+<h3>🔐 Login Page</h3>
+<img src="https://raw.githubusercontent.com/Daksh-Tomar/EventHub/c5a215c9daff140b176b98e010d8af3fa561f555/DBMS%20Project/screenshots/login.png" width="800"/>
+
+<br/><br/>
+
+<h3>📊 User Dashboard</h3>
+<img src="https://raw.githubusercontent.com/Daksh-Tomar/EventHub/c5a215c9daff140b176b98e010d8af3fa561f555/DBMS%20Project/screenshots/user%20dashboard.png" width="800"/>
+
+<br/><br/>
+
+<h3>📅 My Events Page</h3>
+<img src="https://raw.githubusercontent.com/Daksh-Tomar/EventHub/c5a215c9daff140b176b98e010d8af3fa561f555/DBMS%20Project/screenshots/my%20events.png" width="800"/>
 
 <hr/>
+
 
 <h2>📄 License</h2>
 <p>This project is released under the <b>MIT License</b>.</p>
