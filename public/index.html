@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>EventHub — Create Unforgettable Experiences</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img
+            src="./assets/placeholder.png"
+            alt="EventHub logo"
+            class="logo-icon"
+          />
+          <span class="logo">EventHub</span>
+        </div>
+        <nav class="main-nav">
+          <a href="#">Events</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="auth-cta">
+          <a class="link" href="/auth.html#user">Sign In</a>
+          <a class="btn primary" href="/auth.html#faculty">Create Event</a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle nav">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <small class="tag">Professional Event Management</small>
+          <h1>Create Unforgettable <span>Experiences</span></h1>
+          <p class="lead">
+            From intimate gatherings to large conferences — manage every detail
+            with elegance and ease.
+          </p>
+          <div class="hero-actions">
+            <a href="/auth.html#user" class="btn primary">Get Started</a>
+            <a href="#events" class="btn ghost">Explore Events</a>
+          </div>
+
+          <div class="stats">
+            <div><strong>10K+</strong><small>Events Hosted</small></div>
+            <div><strong>500K+</strong><small>Happy Attendees</small></div>
+            <div><strong>98%</strong><small>Satisfaction Rate</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="events" class="container events-section">
+        <h2>Discover Amazing Events</h2>
+        <p class="sub">Browse curated conferences, workshops and meetups</p>
+
+        <div class="tabs">
+          <button class="tab active" data-filter="all">All Events</button>
+          <button class="tab" data-filter="upcoming">Upcoming</button>
+          <button class="tab" data-filter="ongoing">Ongoing</button>
+          <button class="tab" data-filter="completed">Completed</button>
+        </div>
+
+        <div id="cards" class="cards-grid">
+          <!-- JS will populate event cards here -->
+        </div>
+
+        <div class="center">
+          <button class="btn outline" id="refreshBtn">Refresh Events</button>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <h4 class="brand">
+              <img
+                src="/assets/placeholder.png"
+                alt="EventHub logo"
+                class="logo-icon"
+              />
+              <span class="logo">EventHub</span>
+            </h4>
+            <p>
+              Creating unforgettable experiences through seamless event
+              management.
+            </p>
+          </div>
+          <div>
+            <h5>Events</h5>
+            <ul>
+              <li><a href="#">Browse Events</a></li>
+              <li><a href="/auth.html#faculty">Create Event</a></li>
+              <li><a href="#">Featured Events</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Support</h5>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container copyright">
+          © 2024 EventHub. All rights reserved.
+        </div>
+      </footer>
+    </main>
+
+    <!-- event modal -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <button class="close" id="modalClose">✕</button>
+        <h3 id="modalTitle"></h3>
+        <div id="modalBody"></div>
+        <div class="modal-actions">
+          <button class="btn primary" id="registerNow">Register</button>
+          <button class="btn outline" id="modalCloseBtn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/scripts.js"></script>
+    <script src="dashboard.js"></script>
+
+  </body>
+</html>

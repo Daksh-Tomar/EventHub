@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>EventHub — Login / Register</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body class="auth-body">
+    <!-- Header -->
+    <header class="site-header minimal auth-topbar">
+      <div class="container header-inner">
+        <div class="brand">
+          <img
+            src="/assets/placeholder.png"
+            alt="EventHub logo"
+            class="logo-icon"
+          />
+          <span class="logo">EventHub</span>
+        </div>
+        <a class="link" href="/">Back to Home</a>
+      </div>
+    </header>
+
+    <!-- Auth Layout -->
+    <main class="auth-layout">
+      <!-- Left Side Illustration -->
+      <section class="auth-illustration">
+        <div class="overlay"></div>
+        <div class="illustration-text">
+          <h1>Welcome to <span>EventHub</span></h1>
+          <p>
+            Simplify event management — join, create, and collaborate on events
+            effortlessly.
+          </p>
+        </div>
+      </section>
+
+      <!-- Right Side Forms -->
+      <section class="auth-form-section">
+        <div class="auth-wrapper">
+          <!-- User/Faculty Toggle -->
+          <div class="auth-switch">
+            <button id="userBtn" class="switch active">User</button>
+            <button id="facultyBtn" class="switch">Faculty</button>
+          </div>
+
+          <div class="auth-container">
+            <!-- USER FORM -->
+            <form id="userForm" class="auth-form active" novalidate>
+              <!-- LOGIN VIEW -->
+              <div class="form-content login-view">
+                <h2>User Login</h2>
+                <div class="form-row">
+                  <label for="user_email">Email</label>
+                  <input
+                    type="email"
+                    id="user_email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="user_password">Password</label>
+                  <input
+                    type="password"
+                    id="user_password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+                <div class="form-actions">
+                  <button id="userLoginBtn" type="submit" class="btn primary">
+                    Login
+                  </button>
+                  <button type="button" id="showUserRegister" class="btn ghost">
+                    Create Account
+                  </button>
+                </div>
+              </div>
+
+              <!-- REGISTER VIEW -->
+              <div id="userRegister" class="form-content register-view hidden">
+                <h2>Register as Student</h2>
+                <div class="form-row">
+                  <label for="reg_name">Full Name</label>
+                  <input
+                    type="text"
+                    id="reg_name"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="reg_email">Email</label>
+                  <input
+                    type="email"
+                    id="reg_email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="reg_password">Password</label>
+                  <input
+                    type="password"
+                    id="reg_password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+                <div class="form-actions">
+                  <button
+                    id="registerStudentBtn"
+                    type="button"
+                    class="btn primary"
+                  >
+                    Register
+                  </button>
+                  <button type="button" id="backToUserLogin" class="btn ghost">
+                    Back to Login
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- FACULTY FORM -->
+            <form id="facultyForm" class="auth-form hidden" novalidate>
+              <!-- LOGIN VIEW -->
+              <div class="form-content login-view">
+                <h2>Faculty Login</h2>
+                <div class="form-row">
+                  <label for="faculty_email">Email</label>
+                  <input
+                    type="email"
+                    id="faculty_email"
+                    name="email"
+                    placeholder="Enter your faculty email"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="faculty_password">Password</label>
+                  <input
+                    type="password"
+                    id="faculty_password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+                <div class="form-actions">
+                  <button
+                    id="facultyLoginBtn"
+                    type="submit"
+                    class="btn primary"
+                  >
+                    Login
+                  </button>
+                  <button
+                    type="button"
+                    id="showFacultyRegister"
+                    class="btn ghost"
+                  >
+                    Create Account
+                  </button>
+                </div>
+              </div>
+
+              <!-- REGISTER VIEW -->
+              <div
+                id="facultyRegister"
+                class="form-content register-view hidden"
+              >
+                <h2>Register as Faculty</h2>
+                <div class="form-row">
+                  <label for="fac_name">Full Name</label>
+                  <input
+                    type="text"
+                    id="fac_name"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="fac_email">Email</label>
+                  <input
+                    type="email"
+                    id="fac_email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="fac_password">Password</label>
+                  <input
+                    type="password"
+                    id="fac_password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+                <div class="form-actions">
+                  <button
+                    id="registerFacultyBtn"
+                    type="button"
+                    class="btn primary"
+                  >
+                    Register
+                  </button>
+                  <button
+                    type="button"
+                    id="backToFacultyLogin"
+                    class="btn ghost"
+                  >
+                    Back to Login
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>
