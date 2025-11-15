@@ -100,6 +100,7 @@ EventHub/
 │   ├── user-dashboard.html
 │   ├── faculty-dashboard.html
 │   ├── auth.html
+|   ├── favicon.ico
 │   ├── css/
 │   │   └── styles.css
 │   ├── js/
@@ -107,17 +108,26 @@ EventHub/
 │   └── assets/
 │       ├── avatar.svg
 │       ├── placeholder.png
-│       └── auth-bg.jpeg
-│
+|       ├── hero-bg.jpg
+│       └── auth-bg.jpeg│
+|
 ├── server/
+|   ├── middleware/
+|       ├── auth.js
 │   ├── index.js
 │   ├── db.js
 │   ├── routes/
 │   │   ├── auth.js
+|   |   ├── registration.js
 │   │   ├── events.js
 │   │   └── faculty.js
 │   └── .env
 │
+├── sql/
+|   ├── db.sql
+|  
+├── .env
+├── server.js 
 └── README.md
 </pre>
 
